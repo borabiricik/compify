@@ -1,5 +1,7 @@
 import React from 'react'
-import { CompifyProviderProps } from '../../Types/Root/CompifyProvider'
+import "../../Styles/main.scss"
+import { CompifyProviderProps } from '../../Types/Root/CompifyProviderProps'
+import "../../Styles/main.scss"
 
 const CompifyProvider = ({ theme,children }: CompifyProviderProps) => {
     return (

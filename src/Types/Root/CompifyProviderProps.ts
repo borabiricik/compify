@@ -1,6 +1,6 @@
 import React from "react";
 
 export interface CompifyProviderProps {
-    theme: "dark" | "light",
+    theme: "dark"| "light",
     children: React.ReactNode | React.ReactNode[]
 }
