@@ -1,9 +1,21 @@
 {
-  "name": "compifyui",
+  "name": "@borabiricik/compify",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/borabiricik"
   },
-  "version": "0.0.17",
+  "//npmjs_publish_credentials": {
+    "name": "compifyui",
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org/"
+    }
+  },
+  "//github_publish_credentials": {
+    "name": "@borabiricik/compify",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/borabiricik"
+    }
+  },
+  "version": "0.0.19",
   "description": "A simple library for develop EASY & BEAUTIFUL & FAST React Apps",
   "scripts": {
     "rollup": "rollup -c",
@@ -38,14 +50,12 @@
     "typescript": "^4.4.4",
     "webfontloader": "^1.6.28"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "mainStyles": "dist/cjs/styles",
-  "moduleStyles": "dist/ejs/styles",
+  "main": "dist/cjs/main.js",
+  "module": "dist/esm/main.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
+  "types": "dist/main.d.ts",
   "dependencies": {
     "autoprefixer": "^10.4.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -64,7 +74,7 @@
       "last 1 safari version"
     ]
   },
-   "eslintConfig": {
+  "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
