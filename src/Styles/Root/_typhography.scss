@@ -1,0 +1,44 @@
+@use "sass-rem" as *;
+@import "./_colors.scss";
+
+h1{
+    font-size: rem(36px);
+    font-weight: 500;
+}
+
+h2{
+    font-size: rem(28px);
+    font-weight: 500;
+}
+
+h3{
+    font-size: rem(20px);
+    font-weight: 500;
+}
+
+h4{
+    font-size: rem(20px);
+    font-weight: 400;
+}
+
+.text{
+    &-success{
+        color: $success-main;
+    }
+
+    &-danger{
+        color: $danger-main;
+    }
+
+    &-warning{
+        color: $warning-main;
+    }
+
+    &-primary{
+        color: $primary-main;
+    }
+
+    &-info{
+        color: $info-main;
+    }
+}
