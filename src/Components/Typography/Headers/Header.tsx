@@ -2,17 +2,29 @@ import React from "react";
 import { HeaderProps } from "../../../Types/ParentTypes/Typography/TypographyProps";
 
 const Header = (props: HeaderProps) => {
+  const elementProps = { ...props };
+  const elementStyle = {
+    color: elementProps.color,
+    fontSize: elementProps.fontSize,
+  };
   if (props.tag && props.children) {
-    const elementProps = { ...props };
     delete elementProps.children;
     const CustomTag = `${props.tag}`;
+
     return (
-      <div color={elementProps.color} style={{ color: elementProps.color,fontSize: elementProps.fontSize }}>
+      <div className={`${props.color && "text-" + props.color}`}>
         <CustomTag {...elementProps}>{props.children}</CustomTag>
       </div>
     );
   } else {
-    return <h2 {...props}>{props.children}</h2>;
+    return (
+      <h2
+        className={`${props.color && "text-" + props.color}`}
+        {...elementProps}
+      >
+        {props.children}
+      </h2>
+    );
   }
 };
 

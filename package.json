@@ -6,7 +6,11 @@
   "version": "0.0.17",
   "description": "A simple library for develop EASY & BEAUTIFUL & FAST React Apps",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Bora Biricik",
   "license": "ISC",
@@ -14,16 +18,25 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@types/react": "^17.0.34",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.32",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "@types/webfontloader": "^1.6.34",
     "postcss": "^8.4.12",
-    "react": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.51.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "webfontloader": "^1.6.28"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -38,5 +51,23 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "sass-rem": "^3.0.0",
     "webfontloader": "^1.6.28"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+   "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }
