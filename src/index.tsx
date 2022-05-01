@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { CompifyProvider, Navbar } from './Components';
-import Home from './Pages/Home';
-import "./Styles/main.scss"
+import { CompifyProvider } from "compifyui";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Home from "./Pages/Home";
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <CompifyProvider theme='light'>
+    <CompifyProvider>
       <Home />
     </CompifyProvider>
   </React.StrictMode>

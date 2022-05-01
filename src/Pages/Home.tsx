@@ -1,7 +1,6 @@
+import { Header, Text } from 'compifyui';
 import React from 'react'
 import { Navbar } from "../Components";
-import Header from "../Components/Typography/Headers/Header";
-import Text from "../Components/Typography/Texts/Text";
 
 const Home = () => {
   return (

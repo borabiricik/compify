@@ -1,7 +1,7 @@
 {
-  "name": "@borabiricik/compify",
+  "name": "compifyui",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/borabiricik"
+    "registry": "https://registry.npmjs.org/"
   },
   "//npmjs_publish_credentials": {
     "name": "compifyui",
@@ -15,7 +15,7 @@
       "registry": "https://npm.pkg.github.com/borabiricik"
     }
   },
-  "version": "0.0.19",
+  "version": "0.0.34",
   "description": "A simple library for develop EASY & BEAUTIFUL & FAST React Apps",
   "scripts": {
     "rollup": "rollup -c",
@@ -27,8 +27,9 @@
   "author": "Bora Biricik",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
     "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-node-resolve": "^13.2.1",
     "@rollup/plugin-typescript": "^8.3.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -39,14 +40,15 @@
     "@types/react-dom": "^18.0.3",
     "@types/webfontloader": "^1.6.34",
     "postcss": "^8.4.12",
-    "react": "^18.0.0",
-    "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "rollup": "^2.60.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-collect-sass": "^1.0.9",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.51.0",
+    "sass-rem": "^3.0.0",
     "typescript": "^4.4.4",
     "webfontloader": "^1.6.28"
   },
@@ -58,9 +60,15 @@
   "types": "dist/main.d.ts",
   "dependencies": {
     "autoprefixer": "^10.4.5",
+    "compifyui": "^0.0.22",
+    "rollup-plugin-lit-css": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "sass-rem": "^3.0.0",
+    "rollup-plugin-styles": "^4.0.0",
     "webfontloader": "^1.6.28"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "browserslist": {
     "production": [

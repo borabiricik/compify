@@ -1,5 +1,5 @@
-@use "sass-rem" as *;
 @import "./_colors.scss";
+@import "./utils";
 
 h1{
     font-size: rem(36px);
