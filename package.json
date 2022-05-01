@@ -15,7 +15,7 @@
       "registry": "https://npm.pkg.github.com/borabiricik"
     }
   },
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "A simple library for develop EASY & BEAUTIFUL & FAST React Apps",
   "scripts": {
     "rollup": "rollup -c",
