@@ -1,11 +1,9 @@
-import babel from "rollup-plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
-import external from "rollup-plugin-peer-deps-external";
 import typescript from "@rollup/plugin-typescript";
+import babel from "rollup-plugin-babel";
 import dts from "rollup-plugin-dts";
+import external from "rollup-plugin-peer-deps-external";
 import styles from "rollup-plugin-styles";
-import scss from "rollup-plugin-scss";
-import postcss from "rollup-plugin-postcss";
 
 const packageJson = require("./package.json");
 

@@ -1,22 +1,21 @@
-import { Header, Text } from 'compifyui';
-import React from 'react'
+import { Header, Text } from "compifyui";
+import React from "react";
 import { Navbar } from "../Components";
+import { Row } from "../Components/Grid";
+import Link from "../Components/Typography/Links/Link";
 
 const Home = () => {
   return (
     <div>
       <Navbar>
-        <Header tag="h1" color='danger'>Test Header [h1]</Header>
-        <Header tag="h2">Test Header [h2]</Header>
-        <Header tag="h3">Test Header [h3]</Header>
-        <Header tag="h4">Test Header [h4]</Header>
-        <br />
-        <br />
-        <Text color="primary">Test Text [Primary]</Text>
-        <Text color="success">Test Text [Success]</Text>
-        <Text color="danger">Test Text [Danger]</Text>
-        <Text color="warning">Test Text [Warning]</Text>
-        <Text color="info">Test Text [Info]</Text>
+        <Row style={{padding:10}} justifyContent="space-evenly">
+          <Header tag="h1">Logo</Header>
+          <Row style={{width:"50%"}} justifyContent="space-evenly" alignItems="center">
+            <Link to="home">Home</Link>
+            <Link to="about">About</Link>
+            <Link to="contact">Contact</Link>
+          </Row>
+        </Row>
       </Navbar>
     </div>
   );

@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { CompifyProviderProps } from "../../Types/Root/CompifyProviderProps";
-const WebFont = require("webfontloader")
 import "../../Styles/_main.scss"
 
 const CompifyProvider = ({ theme, children }: CompifyProviderProps) => {
   useEffect(() => {
-    WebFont.load({
+    require("webfontloader").load({
       google: {
         families: ['Inter']
       }
