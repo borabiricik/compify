@@ -1,0 +1,22 @@
+.bg{
+    &-success{
+        background-color: $success-main;
+    }
+
+    &-danger{
+        background-color: $danger-main;
+    }
+
+    &-warning{
+        background-color: $warning-main;
+    }
+
+    &-primary{
+        background-color: $primary-main;
+    }
+
+    &-info{
+        background-color: $info-main
+    }
+      
+}

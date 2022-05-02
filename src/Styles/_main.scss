@@ -5,5 +5,12 @@
 @import "./Root/typhography";
 @import "./Root/_utils.scss";
 
+// Basic CSS
+@import "./Sizing/sizing";
+@import "./Spacing/spacing";
+
+//Common CSS
+@import "./Root/common";
+
 //Components CSS
 @import "./Components/links";

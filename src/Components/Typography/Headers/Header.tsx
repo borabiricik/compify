@@ -9,10 +9,11 @@ const Header = (props: HeaderProps) => {
   };
   if (props.tag && props.children) {
     delete elementProps.children;
-    const CustomTag = `${props.tag}`;
+    const CustomTag = `${props.tag}` ;
 
     return (
       <div className={`${props.color && "text-" + props.color}`}>
+        {/* @ts-ignore */}
         <CustomTag {...elementProps}>{props.children}</CustomTag>
       </div>
     );

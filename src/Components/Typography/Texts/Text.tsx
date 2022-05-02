@@ -13,6 +13,7 @@ const Text = (props: TextProps) => {
 
     return (
       <div className={`${props.color && "text-" + props.color}`}>
+        {/* @ts-ignore */}
         <CustomTag {...elementProps}>{props.children}</CustomTag>
       </div>
     );

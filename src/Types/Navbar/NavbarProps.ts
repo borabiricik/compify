@@ -1,6 +1,10 @@
 import React from "react";
+import { CommonProps } from "../Root/CommonProps";
 
-export interface NavbarProps {
-    children?: React.ReactNode | React.ReactNode[] | string | string[] | JSX.Element | JSX.Element[]
+export interface NavbarProps extends CommonProps {
     type?: "default" | "drawer"
+}
+
+export interface NavbarDefaultProps extends NavbarProps{
+    
 }

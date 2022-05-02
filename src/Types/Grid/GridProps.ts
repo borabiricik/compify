@@ -1,10 +1,10 @@
-import React, { StyleHTMLAttributes } from "react";
+import React from "react";
+import { CommonProps } from "../Root/CommonProps";
 
-export interface GridProps {}
+export interface GridProps{}
 
 export interface RowProps
-  extends GridProps,
-    React.HTMLAttributes<HTMLDivElement> {
+  extends GridProps,CommonProps {
   alignItems?:
     | "center"
     | "baseline"

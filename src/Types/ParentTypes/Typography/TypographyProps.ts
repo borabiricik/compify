@@ -1,27 +1,23 @@
 import React, { AnchorHTMLAttributes } from "react";
+import { ColorProps, CommonProps } from "../../Root/CommonProps";
 
-export interface TypographyProps {
+export interface TypographyProps extends ColorProps {
   fontSize?: number;
-  color?: "primary" | "success" | "danger" | "warning" | "info";
   style?: React.CSSProperties;
 }
 
-export interface HeaderProps
-  extends Omit<React.HTMLProps<HTMLDivElement>, "color">,
-    TypographyProps {
+export interface HeaderProps extends CommonProps, TypographyProps {
   tag?: keyof JSX.IntrinsicElements;
   href?: string;
 }
 
 export interface TextProps
-  extends TypographyProps,
-    Omit<React.HTMLAttributes<HTMLParagraphElement>, "color"> {
+  extends TypographyProps, CommonProps {
   tag?: keyof JSX.IntrinsicElements;
 }
 
-export type LinkProps = TypographyProps &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>;
+export type LinkProps = TypographyProps;
 
-export interface CompifyLinkProps extends LinkProps {
+export interface CompifyLinkProps extends LinkProps, CommonProps {
   to?: string | string;
 }
